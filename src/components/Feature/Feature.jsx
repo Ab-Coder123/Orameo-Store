@@ -28,7 +28,7 @@ const Feature = () => {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Digital watches are comfortable in the hand and help you with work, exercise, and health.</p>
-            <Link onClick={()=> {setMenu=('watch')}}  to="/watch" className="mt-3 text-white inline-flex items-center">Learn More  {menu==="watch"?<hr/> : <></> }
+            <Link onClick={()=> {setMenu('watch')}}  to="/watch" className="mt-3 text-white inline-flex items-center">Learn More  {menu==="watch"?<hr/> : <></> }
               <svg fill="none" stroke="currentColor"   className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -47,7 +47,7 @@ const Feature = () => {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Headphones are very comfortable to use for more than one product, and we have headphones that support the noise isolation feature</p>
-            <Link onClick={()=> {setMenu=('headphone')}} to="/headphone"  className="mt-3 text-white-400 inline-flex items-center">Learn More {menu==="headphone"?<hr/> : <></> }
+            <Link onClick={()=> {setMenu('headphone')}} to="/headphone"  className="mt-3 text-white-400 inline-flex items-center">Learn More {menu==="headphone"?<hr/> : <></> }
               <svg fill="none" stroke="currentColor" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -66,7 +66,7 @@ const Feature = () => {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Chargers have the ability to endure, are made of the highest quality, and charge quickly in accordance with the terms and conditions</p>
-            <Link onClick={()=> {setMenu=('charge')}} to="/charge" className="mt-3 text-white-400 inline-flex items-center">Learn More {menu==="charge"?<hr/> : <></>}
+            <Link onClick={()=> {setMenu('charge')}} to="/charge" className="mt-3 text-white-400 inline-flex items-center">Learn More {menu==="charge"?<hr/> : <></>}
               <svg fill="none" stroke="currentColor"   className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
