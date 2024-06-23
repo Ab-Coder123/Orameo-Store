@@ -12,6 +12,8 @@ import img_watch from "./assets/images/Freature/watch_7183194.png";
 import img_headphone from "./assets/images/Freature/headphones_8849470.png";
 import img_charge from "./assets/images/Freature/wireless-charger_8394735.png";
 import Login from "./modules/Login/Login";
+import SignUp from "./modules/SignUp/SignUp";
+import ForgetPass from "./modules/ForgetPass/ForgetPass";
 // داكله عشان البانر 
 
 
@@ -102,6 +104,9 @@ function App() {
             </Route>
 
             <Route path="/modules/Login/Login" element={<Login/>} />
+            <Route path="/modules/SignUp/SignUp" element={<SignUp/>} />
+            <Route path="/modules/ForgetPass/ForgetPass" element={<ForgetPass/>} />
+
 
 
           </Routes>

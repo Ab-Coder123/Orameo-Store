@@ -1,4 +1,4 @@
-import { createContext } from "react" ;
+ import { createContext } from "react" ;
 // ملف ال json 
 import products from "../../assets/productpage";
 
@@ -9,7 +9,7 @@ export const Usecontext = createContext(null)
 const Usecontextprovider = (props) => {
     const ContextValue = {products}
   return(
-    <>
+    <>  
       <Usecontext.Provider value={ContextValue}>
         {props.children}
       </Usecontext.Provider>
