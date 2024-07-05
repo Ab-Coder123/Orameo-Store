@@ -7,6 +7,8 @@ import Member from "../../components/Members/Member";
 import Nav from "../../components/NavBar/Nav";
 import Products from "../../components/Product/Products";
 import Statistic from "../../components/Statistics/Statistic";
+import { useAuth } from "../Context/Contextindex";
+
 const Home = () => {
   //  dark mode
 
@@ -24,8 +26,24 @@ const Home = () => {
     setDarkMode(darkblack === "dark" ? "light" : "dark");
   };
   // هنا هتحط ال كود بتاعك ال هو المنتجات عشان تسمع ف السيكشن بتاع المنتجات
+
+
+  const { currentUser } = useAuth()
+
   return (
+
     <>
+        <div className='text-2xl font-bold pt-14'> {
+  currentUser 
+    ? (
+      alert(
+        `Hello ${currentUser.displayName ? currentUser.displayName : currentUser.text}`
+      )
+        
+      )
+    : (undefined)
+}</div>
+
       <div className="bg-none  fixed  top-32 ml-5">
         <label class="ui-switch">
           <input type="checkbox" />

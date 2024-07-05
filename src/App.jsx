@@ -15,7 +15,7 @@ import Login from "./modules/Login/Login";
 import SignUp from "./modules/SignUp/SignUp";
 import ForgetPass from "./modules/ForgetPass/ForgetPass";
 // داكله عشان البانر 
-
+import { AuthProvider } from "./modules/Context/Contextindex";
 
 
 function App() {
@@ -70,6 +70,7 @@ function App() {
             <li></li>
             <li></li>
           </ul>
+          <AuthProvider>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/modules/Contact/Contact" element={<Contact />} />
@@ -110,6 +111,8 @@ function App() {
 
 
           </Routes>
+          </AuthProvider>
+         
         </>
       )}
     </BrowserRouter>
