@@ -33,12 +33,12 @@ const Home = () => {
   return (
 
     <>
-        <div className='text-2xl font-bold pt-14'> {
+        <div className='text-2xl font-bold pt-4'> {
   currentUser 
     ? (
-      alert(
-        `Hello ${currentUser.displayName ? currentUser.displayName : currentUser.text}`
-      )
+      
+       <span className="flex justify-center">Hello {currentUser.displayName ? currentUser.displayName : currentUser.text}</span>
+     
         
       )
     : (undefined)

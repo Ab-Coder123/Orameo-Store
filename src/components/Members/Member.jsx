@@ -14,7 +14,7 @@ const Member = () => {
               heard of them.
             </p>
           </div>
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap justify-center">
             {Members.map((member) => {
               const {  Image, Name, Job, Desc } = member;
               return (
